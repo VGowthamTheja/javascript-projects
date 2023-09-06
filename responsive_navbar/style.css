@@ -1,0 +1,135 @@
+/* import roboto font from google font api */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e2e2e2;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-header {
+  background-color: #333;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+  padding: 0 20px;
+  color: teal;
+}
+
+.nav-header .logo {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.toggle {
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.toggle.active {
+  transform: rotate(-90deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-links {
+  position: fixed;
+  top: 60px;
+  left: 0px;
+  width: 100%;
+  height: max-content;
+  background-color: #585858;
+}
+
+.social-links {
+  position: fixed;
+  top: 180px;
+  left: 0px;
+  width: 100%;
+  height: max-content;
+  background-color: #585858;
+}
+
+.social-links ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-links li {
+  width: 1em;
+  height: 1em;
+  margin: 0.5em;
+}
+
+.menu {
+  display: none;
+}
+
+.menu.active {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex: 2;
+  }
+  .nav-header {
+    display: flex;
+  }
+  .logo {
+    flex: 1;
+  }
+  .nav-links {
+    position: static;
+    background-color: transparent;
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links ul {
+    flex-direction: row;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .social-links {
+    position: static;
+    background-color: transparent;
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

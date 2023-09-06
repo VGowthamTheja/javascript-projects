@@ -1,0 +1,155 @@
+/* import roboto font from google font api */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e2e2e2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  width: 500px;
+  height: 700px;
+  margin: 0 auto;
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-card {
+  flex: 0 0 100%;
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-container {
+  background-color: teal;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -10;
+  margin-left: 25px;
+}
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #fff;
+  color: #008080;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+  outline: none;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+h3 {
+  color: #008080;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  width: 700px;
+  height: 500px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.picture {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #e2e2e2;
+}
+
+.quote-bcg {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  height: 80px;
+  width: 80px;
+  background-color: #008080;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h4 {
+  color: #00c774;
+  text-align: center;
+}
+
+.content {
+  color: #007745;
+  text-align: start;
+}
+
+.content::selection {
+  color: #fff;
+  background-color: #53be92;
+}
+
+h1 {
+  color: #008080;
+  text-align: center;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 6px;
+  background-color: #008080;
+  margin: 10px auto;
+}

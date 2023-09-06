@@ -1,0 +1,46 @@
+/* import roboto font from google font api */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e2e2e2;
+}
+
+div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  gap: 20px;
+}
+
+div.container > h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+div.container > p {
+  font-size: 6em;
+  margin: 0;
+}
+
+span {
+  color: rgb(0, 110, 15);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  text-decoration: none;
+  color: #000;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}

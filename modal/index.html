@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Modal Project</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <svg
+          viewBox="0 0 1024 1024"
+          fill="currentColor"
+          height="3em"
+          width="3em"
+        >
+          <path
+            d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM513.1 518.1l-192 161c-5.2 4.4-13.1.7-13.1-6.1v-62.7c0-2.3 1.1-4.6 2.9-6.1L420.7 512l-109.8-92.2a7.63 7.63 0 01-2.9-6.1V351c0-6.8 7.9-10.5 13.1-6.1l192 160.9c3.9 3.2 3.9 9.1 0 12.3zM716 673c0 4.4-3.4 8-7.5 8h-185c-4.1 0-7.5-3.6-7.5-8v-48c0-4.4 3.4-8 7.5-8h185c4.1 0 7.5 3.6 7.5 8v48z"
+          />
+        </svg>
+        <span>code addict</span>
+      </div>
+    </header>
+    <div class="banner">
+      <div class="banner__content">
+        <h1 class="banner__title">Modal Project</h1>
+        <p class="banner__text">
+          A modal component is a versatile user interface element that plays a
+          pivotal role in enhancing the user experience of a web application.
+          Essentially, it's a popup window or dialog that appears on top of the
+          main content, temporarily shifting the user's attention to a specific
+          task or piece of information.
+        </p>
+        <button class="banner__btn">Open Modal</button>
+      </div>
+    </div>
+    <div class="modal__overlay">
+      <div class="modal">
+        <div class="modal__header">
+          <h2 class="modal__title">Modal Title</h2>
+          <span class="modal__close">
+            <svg
+              fill="none"
+              class="close"
+              viewBox="0 0 15 15"
+              height="1em"
+              width="1em"
+              fontSize="1.5em"
+            >
+              <path
+                fill="currentColor"
+                fillRule="evenodd"
+                d="M11.782 4.032a.575.575 0 10-.813-.814L7.5 6.687 4.032 3.218a.575.575 0 00-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 00.814.814L7.5 8.313l3.469 3.469a.575.575 0 00.813-.814L8.313 7.5l3.469-3.468z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </span>
+        </div>
+        <div class="modal__body">
+          <p class="modal__text">
+            A modal component is a versatile user interface element that plays a
+            pivotal role in enhancing the user experience of a web application.
+            Essentially, it's a popup window or dialog that appears on top of
+            the main content, temporarily shifting the user's attention to a
+            specific task or piece of information.
+          </p>
+        </div>
+        <div class="modal__footer">
+          <button class="modal__btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
